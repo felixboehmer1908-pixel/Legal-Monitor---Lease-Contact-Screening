@@ -215,7 +215,7 @@ document.getElementById('mainForm').addEventListener('submit', async e => {
 
   if (!input.files[0]) { showErr('Bitte laden Sie einen Mietvertrag (PDF) hoch.'); return; }
   if (input.files[0].size > 10 * 1024 * 1024) { showErr('Die Datei ist zu groß. Maximum: 10 MB.'); return; }
-  if (!WEBHOOK_URL || WEBHOOK_URL === 'YOUR_N8N_WEBHOOK_URL') { showErr('Webhook-URL nicht konfiguriert. Bitte wenden Sie sich an den Administrator.'); return; }
+  if (!WEBHOOK_URL || WEBHOOK_URL === 'https://felixboehmer.app.n8n.cloud/webhook/vertragsanalyse') { showErr('Webhook-URL nicht konfiguriert. Bitte wenden Sie sich an den Administrator.'); return; }
 
   btn.disabled = true;
   prog.style.display = 'flex';
