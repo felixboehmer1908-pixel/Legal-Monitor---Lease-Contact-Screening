@@ -547,7 +547,7 @@ input::placeholder { color: #BDB8AE; }
 
 <script>
 // ── Config — PASTE YOUR N8N FORM URL HERE ─────────────────────
-const N8N_FORM_URL = 'YOUR_N8N_FORM_URL';
+const N8N_FORM_URL = 'https://felixboehmer.app.n8n.cloud/form/ae4ccb26-6f5e-4f8b-ace7-98d29cf504b8';
 // Example: 'https://your-instance.n8n.cloud/form/xxxxxxxxxx'
 // ─────────────────────────────────────────────────────────────
 
@@ -586,7 +586,7 @@ form.addEventListener('submit', e => {
   btn.disabled = true;
   btn.textContent = 'Wird verarbeitet …';
 
-  if (N8N_FORM_URL && N8N_FORM_URL !== 'YOUR_N8N_FORM_URL') {
+  if (N8N_FORM_URL && N8N_FORM_URL !== 'https://felixboehmer.app.n8n.cloud/form/ae4ccb26-6f5e-4f8b-ace7-98d29cf504b8') {
     // Submit to n8n form URL
     // Since n8n Form Trigger needs its own form submission,
     // redirect the user to the n8n form URL
